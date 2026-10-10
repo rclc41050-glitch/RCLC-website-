@@ -12,11 +12,12 @@ header{position:sticky;top:0;background:#0f4c5c;color:#fff;z-index:10}.nav{max-w
 .hero{padding:90px 20px;text-align:center;color:#fff;background:linear-gradient(135deg,#0f4c5c,#2d7d7d)}.hero h1{font-size:clamp(2rem,6vw,3.7rem);margin:0 0 8px}.hero p{max-width:780px;margin:8px auto;font-size:1.1rem}
 .btn{display:inline-block;margin:12px 5px;padding:12px 21px;border-radius:7px;background:#fff;color:#0f4c5c;text-decoration:none;font-weight:bold}.btn.dark{background:#0f4c5c;color:#fff}
 section{max-width:1100px;margin:auto;padding:62px 20px}section.band{max-width:none;background:#f1f7f8}section.band>*{max-width:1060px;margin-left:auto;margin-right:auto}
-h2{color:#0f4c5c;font-size:2rem;margin-top:0}.lead{font-size:1.08rem;max-width:900px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:25px}
+h2{color:#0f4c5c;font-size:2rem;margin-top:0}.lead{font-size:1.08rem;max-width:900px}.about-intro{display:grid;grid-template-columns:minmax(0,1fr) 210px;align-items:center;gap:32px;margin-bottom:28px}.about-logo{display:block;width:100%;max-width:210px;height:auto;justify-self:center;border-radius:8px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:25px}
 .card{background:#f8fafb;border:1px solid #dfe8eb;border-radius:12px;padding:22px}.band .card{background:#fff}h3{color:#0f4c5c;margin-top:0}.icon{font-size:2rem}
 .cta{background:#0f4c5c;color:#fff;text-align:center;max-width:none}.cta h2{color:#fff}.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
 footer{background:#16323f;color:#fff;text-align:center;padding:25px}footer p{margin:5px}
 @media(max-width:760px){nav{display:none}.hero{padding:65px 18px}section{padding:48px 18px}}
+@media(max-width:600px){.about-intro{grid-template-columns:1fr;gap:18px}.about-logo{max-width:180px}}
 </style>
 </head>
 <body>
@@ -35,8 +36,13 @@ footer{background:#16323f;color:#fff;text-align:center;padding:25px}footer p{mar
 </section>
 
 <section id="about">
+<div class="about-intro">
+<div>
 <h2>About RCLC</h2>
 <p class="lead">The Rohingya Community Learning Centre (RCLC) serves Rohingya refugee children who have extremely limited access to education. Because many refugee children in Malaysia are unable to enroll in formal schools, RCLC provides a safe and stable environment where children can learn, grow, and build hope for the future.</p>
+</div>
+<img class="about-logo" src="file_0000000057807208bf2ef5df4497cad4.png" alt="Rohingya Community Learning Centre logo" loading="lazy">
+</div>
 <div class="grid">
 <div class="card"><h3>Current Situation</h3><p>The current learning centre operates from a single apartment. Around 30-40 students come to the centre each weekday from 4:30–7 PM to learn English and mathematics, Science.</p></div>
 <div class="card"><h3>A Safe Place to Learn</h3><p>Many students come from difficult circumstances, including conflict, displacement, loss, and unstable caregiving situations. For these children, the learning centre is more than a school. It is a place of safety and care.</p></div>
